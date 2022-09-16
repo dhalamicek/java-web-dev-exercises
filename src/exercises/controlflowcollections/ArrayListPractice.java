@@ -1,6 +1,7 @@
 package exercises.controlflowcollections;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ArrayListPractice {
     public static void main(String[] args) {
@@ -37,9 +38,14 @@ public class ArrayListPractice {
         words.add("driven");
         words.add("flower");
 
+        Scanner input;
+        input = new Scanner(System.in);
+        System.out.println("Enter the word length for the search: ");
+        Integer userLength = input.nextInt();
+
         for (int i = 0; i < words.size(); i++) {
 
-            if (words.get(i).length() == 5) {
+            if (words.get(i).length() == userLength) {
                 System.out.println(words.get(i) + "\n");
             } else {
                 continue;
