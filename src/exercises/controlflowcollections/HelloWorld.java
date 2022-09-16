@@ -1,4 +1,4 @@
-package exercises;
+package exercises.controlflowcollections;
 
 import java.util.Scanner;
 
